@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   // templateUrl: './course.component.html',
   // styleUrls: ['./course.component.css'
   template: `
-    <button class="btn btn-primary" [class.active]="isActive">Save</button> 
+    <h2>{{title}}</h2>
+    <h2 [textContent]="title"></h2>
+
+    <img [src]="imageUrl"/>
+    <img src={{imageUrl}}>
   `
 })
 export class CourseComponent implements OnInit {
