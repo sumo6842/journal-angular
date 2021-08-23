@@ -5,12 +5,15 @@ import { Component, OnInit } from '@angular/core';
   // templateUrl: './course.component.html',
   // styleUrls: ['./course.component.css'
   template: `
-    <input #email (keyup.enter)="onKeyUp(email.value)"/>
+    <input [value]="email" (keyup.enter)="email=$any($event.target).value;onKeyUp()" /> 
+
+    <!--<input [(ngModel)]="email" (keyup.enter)="onKeyUp()"/>-->
   `
 })
 export class CourseComponent implements OnInit {
-  onKeyUp(email:any) {
-     console.log(email);
+  email = "13@gmail.com";
+  onKeyUp() {
+     console.log(this.email);
   }
 
   ngOnInit(): void {
