@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   // templateUrl: './course.component.html',
   // styleUrls: ['./course.component.css'
   template: `
-    <h2>{{title}}</h2>
-    <h2 [textContent]="title"></h2>
-
-    <img [src]="imageUrl"/>
-    <img src={{imageUrl}}>
+    <table>
+      <tr>
+        <td [attr.colspan]="colSpan"></td>
+      </tr>
+    </table>
   `
 })
 export class CourseComponent implements OnInit {
