@@ -1,5 +1,3 @@
-import { AuthorService } from './author.service';
-import { CourseService } from './course/courses.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -11,7 +9,7 @@ import { CourseComponent } from './course/course.component';
 @NgModule({
   declarations: [
     AppComponent,
-    CourseComponent,
+    CourseComponent
     // CourseService
   ],
   imports: [
@@ -19,7 +17,7 @@ import { CourseComponent } from './course/course.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [CourseService, AuthorService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
