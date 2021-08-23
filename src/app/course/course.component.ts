@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   // templateUrl: './course.component.html',
   // styleUrls: ['./course.component.css'
   template: `
-    <button 
-    [style.backgroundColor]="isActive ? 'green' : 'red'">Save</button>
+
+  <div (click)="onDivClicked()">
+    <button (click)="onSave($event)">Save</button>
+  </div>
   `
 })
 export class CourseComponent implements OnInit {
@@ -15,8 +17,18 @@ export class CourseComponent implements OnInit {
   imageUrl = "https://images.unsplash.com/photo-1528127269322-539801943592?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80";
 
   isActive = false;
-
   colSpan = 2;
+
+  onSave($event:any) {
+    $event.stopPropagation();
+    console.log('Button was clicked', $event);
+  }
+
+  onDivClicked() {
+    console.log("Div was cliked!!!");
+    
+  }
+
   ngOnInit(): void {
     // throw new Error('Method not implemented.');
   }
