@@ -1,7 +1,8 @@
 <button class="btn"
-      [ngClass]="{
-        'btn-primary': isSelected,
-        'btn-secondary': !isSelected
+      [ngStyle] = "{
+        'backgroundColor': cansave ? 'gray' : 'blue',
+        'color': cansave ? 'bold' : 'normal',
+        'fontweight': cansave ? 'white' : 'black'
       }"
       (click) = "onClick()">
       Change

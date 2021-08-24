@@ -7,10 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   courses: any;
-  isSelected= true;
+  cansave= true;
 
   onClick() {
-    this.isSelected = !this.isSelected;
+    this.cansave = !this.cansave;
   }
 
 }
