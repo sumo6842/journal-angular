@@ -1,3 +1,4 @@
+import { InputFormatDirective } from './input-format.directive';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -10,6 +11,7 @@ import { DirectiveComponent } from './directive/directive.component';
   declarations: [
     AppComponent,
     DirectiveComponent,
+    InputFormatDirective
   ],
   imports: [
     BrowserModule,
