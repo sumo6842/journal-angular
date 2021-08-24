@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  courses: any;
-  cansave= true;
-
-  onClick() {
-    this.cansave = !this.cansave;
-  }
+ task = {
+   title: 'Review applications',
+   assignee: {
+     name : null
+   }
+ }
 
 }
