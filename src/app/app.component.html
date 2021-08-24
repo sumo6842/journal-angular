@@ -1,8 +1,15 @@
 <h1>Angular</h1>
-<!-- <app-root></app-root> -->
-<!-- <author></author> -->
-<!-- <favorite></favorite> -->
-
-<input type="text" [(ngModel)]="title"> 
-<br>
-{{title | titleCase}}
+<!-- <directive></directive> -->
+<div *ngIf="courses.length > 0,
+          then coursesList
+          else noCourse">
+  List of Courses
+</div>
+<ng-template #coursesList>
+  <table>
+    <tr *ngFor="let course of courses">
+      <td>{{course}}</td>
+    </tr>
+  </table>
+</ng-template>
+<ng-template #noCourse>No Course</ng-template>
