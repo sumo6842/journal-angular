@@ -1,21 +1,7 @@
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link" [class.active]="viewMode == 'map'"
-      (click)="viewMode = 'map'"> 
-      Map View
-    </a>
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link" [class.active]="viewMode == 'list'"
-      (click)="viewMode = 'list'">
-      List View
-    </a>
+<ul>
+  <li *ngFor="let course of courses; even as isEven">
+    {{course.name}}
+    <span *ngIf="isEven">(EVEN)</span>
+    <button (click)="onRemove(course)">Remove</button>
   </li>
 </ul>
-
-<div [ngSwitch]="viewMode">
-  <div *ngSwitchCase="'map'">Map view Content</div>
-  <div *ngSwitchCase="'list'">List View Content</div>
-  <div *ngSwitchDefault>Otherwise</div>
-</div>
