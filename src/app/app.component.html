@@ -1,5 +1,21 @@
-<h1>Angular</h1>
-<div [hidden]="courses.length == 0"> Course's list</div>
-<div [hidden]="courses.length > 0">
-  No course
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link" [class.active]="viewMode == 'map'"
+      (click)="viewMode = 'map'"> 
+      Map View
+    </a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" [class.active]="viewMode == 'list'"
+      (click)="viewMode = 'list'">
+      List View
+    </a>
+  </li>
+</ul>
+
+<div [ngSwitch]="viewMode">
+  <div *ngSwitchCase="'map'">Map view Content</div>
+  <div *ngSwitchCase="'list'">List View Content</div>
+  <div *ngSwitchDefault>Otherwise</div>
 </div>
