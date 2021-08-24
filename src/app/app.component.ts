@@ -6,13 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  courses = [
-    {id: 1, name: 'Course 1'},
-    {id: 2, name: 'Course 2'},
-    {id: 3, name: 'Course 3'},
-  ]
-  onRemove(course:any) {
-    let index = this.courses.indexOf(course);
-    this.courses.splice(index, 1);
+  courses: any;
+  isSelected= true;
+
+  onClick() {
+    this.isSelected = !this.isSelected;
   }
+
 }

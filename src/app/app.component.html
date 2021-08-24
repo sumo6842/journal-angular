@@ -1,7 +1,8 @@
-<ul>
-  <li *ngFor="let course of courses; even as isEven">
-    {{course.name}}
-    <span *ngIf="isEven">(EVEN)</span>
-    <button (click)="onRemove(course)">Remove</button>
-  </li>
-</ul>
+<button class="btn"
+      [class]="{
+        'btn-primary': isSelected,
+        'btn-secondary': !isSelected
+      }"
+      (click) = "onClick()">
+      Change
+</button>
