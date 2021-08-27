@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DirectiveComponent } from './directive.component';
+import { ZippyComponent } from './zippy.component';
 
-describe('DirectiveComponent', () => {
-  let component: DirectiveComponent;
-  let fixture: ComponentFixture<DirectiveComponent>;
+describe('ZippyComponent', () => {
+  let component: ZippyComponent;
+  let fixture: ComponentFixture<ZippyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DirectiveComponent ]
+      declarations: [ ZippyComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DirectiveComponent);
+    fixture = TestBed.createComponent(ZippyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -5,13 +5,17 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DirectiveComponent } from './directive/directive.component';
+
+import { HighlightDirective } from './highlight.directive';
+import { ZippyComponent } from './zippy/zippy.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    DirectiveComponent,
-    InputFormatDirective
+    InputFormatDirective,
+    HighlightDirective,
+    ZippyComponent,
   ],
   imports: [
     BrowserModule,

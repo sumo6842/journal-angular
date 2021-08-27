@@ -6,10 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- task = {
-   title: 'Review applications',
-   assignee: {
-     name : null
-   }
- }
+  color= '';
+  _color = "this is mind"; 
+  private key = 'string test for key color';
+  
 }
