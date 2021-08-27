@@ -1,0 +1,8 @@
+<style>
+  
+</style>
+<button class='btn' [class]="{
+  'btn-secondary': isFavorite,
+  'btn-primary': !isFavorite 
+}"
+  (click)="onClick()">Save</button>

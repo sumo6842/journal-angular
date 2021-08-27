@@ -8,6 +8,10 @@ import { AppComponent } from './app.component';
 
 import { HighlightDirective } from './highlight.directive';
 import { ZippyComponent } from './zippy/zippy.component';
+import { FavoriteComponent } from './favorite/favorite.component';
+import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -16,6 +20,10 @@ import { ZippyComponent } from './zippy/zippy.component';
     InputFormatDirective,
     HighlightDirective,
     ZippyComponent,
+    FavoriteComponent,
+    PanelComponent,
+    LikeComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
