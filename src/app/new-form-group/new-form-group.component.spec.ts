@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ZippyComponent } from './zippy.component';
+import { NewFormGroupComponent } from './new-form-group.component';
 
-describe('ZippyComponent', () => {
-  let component: ZippyComponent;
-  let fixture: ComponentFixture<ZippyComponent>;
+describe('NewFormGroupComponent', () => {
+  let component: NewFormGroupComponent;
+  let fixture: ComponentFixture<NewFormGroupComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ZippyComponent ]
+      declarations: [ NewFormGroupComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ZippyComponent);
+    fixture = TestBed.createComponent(NewFormGroupComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

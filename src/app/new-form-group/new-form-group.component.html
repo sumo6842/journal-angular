@@ -1,0 +1,38 @@
+<form [formGroup]="form">
+  <div class="form-group"> -->
+    <input
+      type="text"
+      class="form-control"
+      name="name"
+      formControlName="name"
+    />
+    <div class="alert alert-danger" *ngIf="name.touched && name.invalid">
+      <div *ngIf="name.errors?.required">
+        username is reuqired
+      </div>
+    </div>
+  </div>
+</form> 
+
+<form action="">
+  <div class="form-group">
+    <label for="" id="username">Username</label>
+    <input 
+    type="text" 
+    class="form-control"
+    ngModel 
+    #username="ngModel"
+    name="username"
+    id="username"
+    required
+    >
+    <div 
+    *ngIf="username.touched && username.invalid" 
+    class="alert alert-danger"
+    >
+      <div *ngIf="username.errors?.required">
+        The username is required
+      </div>
+    </div>
+  </div>
+</form>

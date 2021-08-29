@@ -7,7 +7,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { HighlightDirective } from './highlight.directive';
-import { ZippyComponent } from './zippy/zippy.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
@@ -15,6 +14,8 @@ import { ContactComponent } from './contact/contact.component';
 import { CourseComponent } from './course/course.component';
 import { SignupComponent } from './signup/signup.component';
 import { RegisterComponent } from './register/register.component';
+import { NewFormGroupComponent } from './new-form-group/new-form-group.component';
+import { PasswordComponent } from './password/password.component';
 
 
 @NgModule({
@@ -22,7 +23,6 @@ import { RegisterComponent } from './register/register.component';
     AppComponent,
     InputFormatDirective,
     HighlightDirective,
-    ZippyComponent,
     FavoriteComponent,
     PanelComponent,
     LikeComponent,
@@ -30,6 +30,8 @@ import { RegisterComponent } from './register/register.component';
     CourseComponent,
     SignupComponent,
     RegisterComponent,
+    NewFormGroupComponent,
+    PasswordComponent,
   ],
   imports: [
     BrowserModule,
